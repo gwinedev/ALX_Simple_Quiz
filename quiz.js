@@ -1,9 +1,9 @@
 function checkAnswer() {
   let correctAnswer = "4";
 
-  const userAnswer = document.querySelector("input[name='quiz']:checked");
+  const userAnswer = document.querySelector("input[name='quiz']:checked").value;
 
-  if (userAnswer.value === correctAnswer) {
+  if (userAnswer === correctAnswer) {
     const feedback = (document.getElementById("feedback").textContent =
       "Correct! Well done.");
   } else {
